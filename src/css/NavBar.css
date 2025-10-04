@@ -1,0 +1,41 @@
+.container {
+    margin-top: 2vh;
+    display: flex;
+    width: 25vw;
+    height: 5vh;
+    justify-self: center;
+    border-radius: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    background: #fff;
+    position: relative;
+    overflow: hidden; /* Ensures rounded corners clip children */
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+    flex: 1;
+    text-align: center;
+    padding: 0.8vh 0;
+    border-right: 1px solid lightgray;
+    border-radius: 0; /* Remove inner rounding */
+}
+
+.nav-link:first-child {
+    border-radius: 40px 0 0 40px;
+    margin-left: 0;
+}
+
+.nav-link:last-child {
+    border-radius: 0 40px 40px 0;
+    border-right: none;
+    margin-right: 0;
+}
+
+.nav-link:hover {
+    color: lightblue;
+}
