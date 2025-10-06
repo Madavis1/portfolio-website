@@ -5,22 +5,6 @@
 }
 
 :root {
---bg-dark: hsl(232 72% 2%);
---bg: hsl(227 50% 6%);
---bg-light: hsl(225 31% 10%);
---text: hsl(224 100% 99%);
---text-muted: hsl(224 33% 73%);
---highlight: hsl(225 19% 42%);
---border: hsl(225 24% 31%);
---border-muted: hsl(226 33% 21%);
---primary: hsl(225 76% 77%);
---secondary: hsl(44 49% 59%);
---danger: hsl(9 26% 64%);
---warning: hsl(52 19% 57%);
---success: hsl(146 17% 59%);
---info: hsl(217 28% 65%);
 
---gradient: linear-gradient(to bottom, var(--bg) 95%, var(--bg-light));
-
-background-color: var(--bg-dark);
 }
+
