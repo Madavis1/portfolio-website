@@ -1,0 +1,55 @@
+.box {
+    margin-top: 12rem ;
+    height: 30rem;
+    width: 50%;
+    justify-self: center;
+    align-self: center;
+    background-color: var(--bg-dark);
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* change padding for thicker border animation  */
+    padding: 2px;
+}
+
+.inner {
+    background-color: var(--bg);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    border-radius: 1rem;
+}
+
+/* spinning linear gradient to create animated border */
+.box::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--primary) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  height: 100vh;
+  width: 500px;
+  transform: translate(0);
+  position: absolute;
+  animation: rotate 5s linear forwards infinite;
+  z-index: 0;
+  top: 50%;
+  transform-origin: top center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
