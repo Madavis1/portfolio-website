@@ -6,7 +6,6 @@
 }
 
 .box {
-    /* margin-top: 12rem; */
     height: 30rem;
     width: 50%;
     justify-self: center;
@@ -31,6 +30,7 @@
     border-radius: 1rem;
     padding: 5% 5%;
     box-sizing: border-box;
+    display: flex;
 }
 
 /* spinning linear gradient to create animated border */
@@ -103,6 +103,13 @@
     }
 }
 
+.left {
+  width: 40%;
+  height: 100%;
+  border: 1px solid white;
+  border-image: linear-gradient(180deg, var(--bg), var(--border-muted), var(--bg));
+}
+
 img{
   height: 30%;
   border-radius: 100%;
@@ -121,5 +128,44 @@ h2 {
 }
 
 h3 {
-  color: var(--text-muted)
+  color: var(--text-muted);
+  margin-bottom: 30px;
+}
+
+.socials {
+  display: flex;
+  gap: 0 1rem;
+}
+
+.social:hover svg path {
+  fill: var(--primary);
+}
+
+.download {
+  border: 1px solid var(--primary);
+  border-radius: 1rem;
+  padding: 5px 20px;
+  color: var(--primary);
+  transition: 0.5s;
+}
+
+.download:hover {
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  color: var(--bg);
+  stroke: var(--bg);
+}
+
+.download svg path {
+  stroke: var(--primary);
+  transition: 0.5s;
+}
+
+.download:hover svg path {
+  stroke: var(--bg);
+}
+
+.right {
+  width: 60%;
+  height: 100%;
 }
