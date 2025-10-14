@@ -1,6 +1,8 @@
 import "../css/AboutMe.css";
 import Profile from "../assets/stock-user.jpg";
 import LinkedIn from "../assets/linkedin.svg";
+import ImageCarousel from "./ImageCarousel";
+import { WorkLogos } from "../constants/work";
 
 const AboutMe = () => {
   return (
@@ -54,7 +56,7 @@ const AboutMe = () => {
                 </svg>
               </a>
             </div>
-            <a 
+            <a
               className="download"
               href="../assets/CV Main.pdf"
               download
@@ -62,7 +64,7 @@ const AboutMe = () => {
                 display: "inline-flex",
                 alignItems: "center",
                 marginTop: "1rem",
-                textDecoration: "none"
+                textDecoration: "none",
               }}
             >
               <svg
@@ -84,7 +86,32 @@ const AboutMe = () => {
               Download CV
             </a>
           </div>
-          <div className="right"></div>
+          <div className="right">
+            <div className="work">
+              <h4>Work Tech Stack</h4>
+              <ImageCarousel 
+              logos={ WorkLogos }/>
+            </div>
+            <div className="personal">
+              <h4>Personal Project Tech Stack</h4>
+              <ImageCarousel 
+              logos={ WorkLogos }/>
+            </div>
+            <div className="info">
+              <div className="point">
+                <h4>2+ Years</h4>
+                <p>experience</p>
+              </div>
+              <div className="point">
+                <h4>3+ Projects</h4>
+                <p>completed</p>
+              </div>
+              <div className="point">
+                <h4>Forever</h4>
+                <p>learning</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="arrow">
